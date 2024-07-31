@@ -12,8 +12,7 @@ A modern note-taking app built with React and Vite. This app allows you to add, 
 - **Sort Notes**: Sort notes by various criteria.
 
 ## Demo
-
-![Notes App Screenshot](url-to-screenshot)
+![Notes App Screenshot](ReactNotes/Images/Screenshot%202024-08-01%20033449.png)
 
 ## Installation
 
@@ -29,7 +28,7 @@ To get started with the project, follow these steps:
 3. Start the development server:
    ```bash
    npm run dev
-4. Open your browser and visit [http://localhost:3000] to see the app in action.
+4. Open your browser and visit [http://localhost:5173](http://localhost:5173) to see the app in action.
 
 ## Usage
 -> Add a Note: Use the input fields to add a new note with a title and summary.
