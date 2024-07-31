@@ -4,6 +4,7 @@ import { Button } from "react-bootstrap";
 
 const Notes = ({ notes, markAsComplete, markAsImportant, removeNote }) => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [sortOrder, setSortOrder] = useState("default");
 
   const handleSearch = (event) => {
     setSearchQuery(event.target.value);
@@ -15,6 +16,22 @@ const Notes = ({ notes, markAsComplete, markAsImportant, removeNote }) => {
       )
     : notes;
 
+  const handleSort = () => {
+    setSortOrder((prevOrder) =>
+      prevOrder === "default" ? "important" : "default"
+    );
+  };
+
+  const sortedNotes = [...filteredNotes].sort((a, b) => {
+    if (sortOrder === "important") {
+      if (a.important && !b.important) return -1;
+      if (!a.important && b.important) return 1;
+    }
+    if (a.complete && !b.complete) return 1;
+    if (!a.complete && b.complete) return -1;
+    return 0;
+  });
+
   return (
     <div>
       <h1 className="Notes-Heading-top">Notes</h1>
@@ -25,7 +42,10 @@ const Notes = ({ notes, markAsComplete, markAsImportant, removeNote }) => {
         value={searchQuery}
         onChange={handleSearch}
       />
-      {filteredNotes.map((note, index) => (
+       <Button onClick={handleSort}>
+        {sortOrder === "default" ? "Sort by Importance" : "Sort by Default"}
+      </Button>
+      {sortedNotes.map((note, index) => (
         <div className="note-container" key={index}>
           <h3>Title</h3>
           <h5
