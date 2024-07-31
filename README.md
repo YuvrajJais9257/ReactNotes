@@ -1,8 +1,46 @@
-# React + Vite
+# React + Vite Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern note-taking app built with React and Vite. This app allows you to add, mark as important, mark as complete, delete, search, and sort notes efficiently.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Note**: Easily add new notes with a title and summary.
+- **Mark as Important**: Highlight notes that are important to you.
+- **Mark as Complete**: Track completed tasks by marking notes as complete.
+- **Delete Note**: Remove notes that are no longer needed.
+- **Search Note by Title**: Quickly find notes using the search functionality.
+- **Sort Notes**: Sort notes by various criteria.
+
+## Demo
+
+![Notes App Screenshot](url-to-screenshot)
+
+## Installation
+
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/react-vite-notes-app.git
+   cd react-vite-notes-app
+2. Install dependencies:
+   ```bash
+   npm install
+3. Start the development server:
+   ```bash
+   npm run dev
+4. Open your browser and visit [http://localhost:3000] to see the app in action.
+
+## Usage
+-> Add a Note: Use the input fields to add a new note with a title and summary.
+-> Mark as Important: Click the "Mark as Important" button to highlight important 
+   notes.
+-> Mark as Complete: Click the "Mark as Complete" button to track completed notes.
+-> Delete Note: Click the "Remove" button to delete a note.
+-> Search Notes: Use the search bar to find notes by their title.
+-> Sort Notes: Sorting functionality is currently in development.
+
+## Technologies Used
+-> React: JavaScript library for building user interfaces.
+-> Vite: Next generation frontend tooling.
+-> Bootstrap: CSS framework for responsive design.
