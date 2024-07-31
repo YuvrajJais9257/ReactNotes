@@ -12,7 +12,7 @@ A modern note-taking app built with React and Vite. This app allows you to add, 
 - **Sort Notes**: Sort notes by various criteria.
 
 ## Demo
-![Notes App Screenshot](ReactNotes/Images/Screenshot%202024-08-01%20033449.png)
+![Notes App Screenshot](Images/Screenshot%202024-08-01%20033449.png)
 
 ## Installation
 
